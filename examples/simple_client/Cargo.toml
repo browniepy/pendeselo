@@ -1,8 +1,0 @@
-[package]
-name = "simple_client"
-version = "0.1.0"
-edition = "2021"
-
-[dependencies]
-tokio = { version = "1.38.0", features = ["full"] }
-router = { git="https://github.com/browniepy/pendeselo.git" }
