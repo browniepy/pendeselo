@@ -4,11 +4,8 @@ pub use ::std::collections::HashMap;
 mod client;
 pub use client::Client;
 
-pub mod contents;
-pub use contents::Message;
-
-mod chat;
-pub use chat::Chat;
+pub mod structs;
+pub use structs::Message;
 
 #[derive(Serialize, Deserialize, Clone)]
 #[serde(rename_all = "snake_case")]
@@ -22,5 +19,3 @@ pub enum Model {
     #[serde(rename = "google/gemma-7b-it:free")]
     Gemma,
 }
-
-pub mod req_res;
